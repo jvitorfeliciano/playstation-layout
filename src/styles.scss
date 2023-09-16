@@ -14,3 +14,14 @@ body {
     rgba(9, 9, 121, 1) 100%
   );
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 15px;
+  cursor: pointer;
+  :hover {
+    color: blue;
+    font-weight: 300;
+  }
+}
