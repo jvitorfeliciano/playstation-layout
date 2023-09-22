@@ -1,8 +1,8 @@
 <a href="#" class="card-container">
-  <img src="assets/bt-5.jpg" class="card-img" alt="" />
+  <img [src]="gameInformations.gameCover" class="card-img" alt="" />
   <div class="card-label">
     <div class="card-label-content">
-      <p>{{ gameLabel }}</p>
+      <p>{{ gameInformations.gameLabel }}</p>
     </div>
     <div class="card-pricing">
       <div class="card-pricing-title">
@@ -11,10 +11,10 @@
       <div class="card-pricing-value">
         <div class="card-pricing-value-console">
           <span>|</span>
-          <p>{{ gameType }}</p>
+          <p>{{ gameInformations.gameType }}</p>
         </div>
         <div class="pricing-value-money">
-          <p class="game-price">{{ price }}</p>
+          <p class="game-price">{{ gameInformations.gamePrice }}</p>
         </div>
       </div>
     </div>

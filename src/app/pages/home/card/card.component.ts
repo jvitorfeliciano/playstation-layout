@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { GameInformations } from 'src/app/models/game.information';
 
 @Component({
   selector: 'app-card',
@@ -7,11 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
   @Input()
-  gameLabel: string = '';
-
-  @Input()
-  gameType: string = '';
-
-  @Input()
-  price: string = '';
+  gameInformations!: GameInformations;
 }
